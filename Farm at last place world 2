@@ -1,5 +1,6 @@
-getgenv().autoTween = true
-while autoTween == true do
+getgenv().autoTeleport = true
+while autoTeleport == true do
+pcall(function()
 local teleport_table = {
     location1 = Vector3.new(-830.3578491210938, 6.681128978729248, -6718.892578125), -- your desired position
     location2 = Vector3.new()  -- your desired position
@@ -20,7 +21,7 @@ function bypass_teleport(v)
         -- print('Teleporting Done!')
         wait(1.0)
         end
-      end
+      end)
 
 bypass_teleport(teleport_table.location1)
    
